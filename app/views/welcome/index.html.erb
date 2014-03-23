@@ -1,18 +1,22 @@
 <div class="container hero">
     <div class="twelve columns relative">
         <ul class="bxslider">
-          <li><img src="http://placehold.it/700x381"  title="Test Caption"/></li>
-          <li><img src="http://placehold.it/700x381" /></li>
-          <li><img src="http://placehold.it/700x381" /></li>
-          <li><img src="http://placehold.it/700x381" /></li>
+          <% @slideshow.each do |slide| %>
+          <li>
+            <%= image_tag("gallery/" + slide[:name] + ".jpg",
+                alt: slide[:caption], title: slide[:caption]) %>
+          </li>
+          <% end %>
         </ul>
     </div><!-- end sixteen columns -->
     <div id="bx-pager" class="hide-on-mobile four columns">
-          <a data-slide-index="0" href=""><img src="http://placehold.it/220x92" /></a>
-          <a data-slide-index="1" href=""><img src="http://placehold.it/220x92" /></a>
-          <a data-slide-index="2" href=""><img src="http://placehold.it/220x92" /></a>
-          <a data-slide-index="3" href=""><img src="http://placehold.it/220x92" /></a>
-        </div>
+      <% @slideshow.each_with_index do |slide, i| %>
+      <a data-slide-index="<%= i %>" href="">
+        <%= image_tag("gallery/thumbnails/" + slide[:name] + ".jpg",
+            alt: slide[:caption]) %>
+      </a>
+      <% end %>
+    </div>
 </div><!-- end container -->
 <div class="bg_gray add-bottom_3 add-top_10">
     <section class="container">
