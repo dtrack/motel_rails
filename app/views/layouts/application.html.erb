@@ -5,32 +5,6 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <%= javascript_include_tag "application" %>
-  <script type="text/javascript">
-    // $(window).load(function() {
-    //   $('.flexslider').flexslider();
-    // });
-    $(document).ready(function() {
-        $('.bxslider').bxSlider({
-            pagerCustom: '#bx-pager',
-            responsive: false,
-            // onResize: function(viewportWidth, viewportHeight) {
-            //     console.log('viewPort was resized', arguments);
-            //     var pager = $('#bx-pager');
-            //     // we don't want to constrain the height
-            //     var oldWidth = pager.width();
-            //     var newWidth = Math.round(
-            //         oldWidth * viewportHeight / pager.height());
-            //     var right = parseInt(pager.css('right'), 10);
-            //     var parentWidth = pager.parent().width();
-            //     var right = parentWidth - viewportWidth - newWidth + 8;
-            //     pager.css({
-            //         width: newWidth,
-            //         right: right
-            //     });
-            }
-        });
-    });
-  </script>
   <%= csrf_meta_tags %>
 </head>
 <body>

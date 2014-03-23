@@ -81,7 +81,7 @@
 		onSlideAfter: function() {},
 		onSlideNext: function() {},
 		onSlidePrev: function() {},
-		onResize: function() {}
+		onRedraw: function() {}
 	}
 
 	$.fn.bxSlider = function(options){
@@ -1075,8 +1075,6 @@
 				windowHeight = windowHeightNew;
 				// update all dynamic elements
 				el.redrawSlider();
-				slider.settings.onResize(
-					slider.viewport.outerWidth(), slider.viewport.outerHeight());
 			}
 		}
 
@@ -1275,6 +1273,12 @@
 				populatePager();
 				updatePagerActive(slider.active.index);
 			}
+			slider.settings.onRedraw({
+				outerWidth: slider.viewport.outerWidth(),
+				outerHeight: slider.viewport.outerHeight(),
+				width: slider.viewport.width(),
+				height: slider.viewport.height()
+			});
 		}
 
 		/**
