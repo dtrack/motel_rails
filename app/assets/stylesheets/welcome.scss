@@ -1,8 +1,21 @@
 body {
-    #banner_home .four.columns {
-        text-align: right;
-        a.button_yellow {
-            margin: 10px;
+
+    .ie8 #banner_home, .ie7 #banner_home {
+        border: 1px solid #ededed;
+    }
+    #banner_home {
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        position: relative;
+        top: -27px;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        margin-bottom: 20px;
+        .four.columns {
+            text-align: right;
+            a.button_yellow {
+                margin: 10px;
+            }
         }
     }
 

@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require google_map
-//= require flexi_slider
 //= require jquery.bxslider
 //= require plug_ins
 //= require functions
