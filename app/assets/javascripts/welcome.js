@@ -6,7 +6,7 @@ $(document).ready(function() {
         useCSS: false,
         onRedraw: function(viewportDimensions) {
             var viewportHeight = viewportDimensions.height;
-            pager.css({
+            $('#bx-pager').css({
                 'min-height': viewportHeight
             });
         }
