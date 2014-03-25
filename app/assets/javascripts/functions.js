@@ -74,9 +74,6 @@ $(function(){
 });
 
 
-/* MOBILE MENU ======================================== */
-$('#main-nav').mobileMenu();
-
 /* RATING ======================================== */
 
         $('.rate_wd').each(function(i) {

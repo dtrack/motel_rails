@@ -9,11 +9,18 @@
 /*===========================================================================*/
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
+     #logo a {
+        background: image-url("logo_2.png") no-repeat 0 0;
+        display: block;
+        height: 54px;
+        margin: 15px auto;
+        text-indent: -9999px;
+        width: 142px;
+    }
 }
 
 /*===========================================================================*/
-/*============================ Mobile (Portrait) ============================*/
+/*============================ Mobile (Portrait + Landscape)=================*/
 /*===========================================================================*/
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
@@ -27,8 +34,261 @@
 /*===========================================================================*/
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .hide-on-mobile {
-        display: none;
+    body {
+        margin-top: 0;
+        .hide-on-mobile {
+            display: none;
+        }
+        header {
+            height: 210px;
+            position: relative;
+            #wxWrap {
+                float: left;
+            }
+
+            ul#lang {
+                color: #222;
+                a {
+                    color: #666;
+                    text-decoration: none;
+                    &:hover {
+                        color: #222;
+                    }
+                }
+            }
+        }
+
+        // used in fullscreen galleries
+        #back {
+            display: block;
+            position: absolute;
+            right: 70px;
+            top: 6px;
+            width: 80px;
+        }
+
+        #banner_home {
+            h2 {
+                color: #636363;
+                font-size: 26px;
+                margin-bottom: 0;
+            }
+
+            .four.columns {
+                text-align: center;
+            }
+        }
+
+        footer {
+            ul#nav-footer {
+                text-align: center;
+                width: 100%;
+                li {
+                    background: image-url("menu_footer_divider.png") left center no-repeat;
+                    display: inline;
+                    float: none;
+                    margin-right: 10px;
+                    padding-left: 10px;
+                    &:first-child {
+                        background: none;
+                    }
+                }
+            }
+            // copyright
+            .copy {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    // related to fullscreen gallery pages
+    .full {
+        header {
+            background: #efefef image-url("bg_header.png") repeat-x left -20px;
+            border-bottom: 1px solid #e6e6e6;
+            height: 38px;
+            width: 100%;
+            z-index: 2;
+        }
+        .four.columns {
+            float: left;
+            margin-left: -25px;
+            width: 160px;
+        }
+        ul#lang a, #back a {
+            color: #ccc;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+            }
+        }
+        nav {
+            display: none;
+        }
+        #wxWrap {
+            display: none;
+        }
+        .twelve.columns {
+            float: right;
+            margin-right: -20px;
+            margin-top: 8px;
+            width: 90px;
+            ul#lang {
+                float: right;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        #logo a {
+            background: image-url("logo_2.png") no-repeat 0 0;
+            display: block;
+            height: 54px;
+            margin: 5px auto;
+            text-indent: -9999px;
+            width: 142px;
+        }
+        #slidecaption {
+            background: #fff;
+            bottom: 2%;
+            box-shadow: 0 1px 5px rgba(0,0,0,.5);
+            font-size: 1.30em;
+            line-height: 7px;
+            -moz-box-shadow: 0 1px 5px rgba(0,0,0,.5);
+            padding: 10px;
+            position: absolute;
+            right: 2%;
+            text-align: right;
+            -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.5);
+            span {
+                color: #999;
+                display: block;
+                font-size: 0.70em;
+                margin-top: 10px;
+            }
+        }
     }
 }
 
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    body {
+        margin-top: 0;
+        header {
+            height: 210px;
+            position: relative;
+            ul#lang {
+                color: #222;
+                a {
+                    color: #666;
+                    text-decoration: none;
+                    &:hover {
+                        color: #222;
+                    }
+                }
+            }
+            #wxWrap {
+                float: left;
+            }
+        }
+        footer {
+            ul#nav-footer {
+                text-align: center;
+                width: 100%;
+            }
+
+            ul#nav-footer li {
+                background: none;
+                float: none;
+                margin-right: 0;
+                padding-left: 0;
+            }
+            .copy {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+
+        #banner_home {
+            h2 {
+                color: #636363;
+                font-size: 18px;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            .four.columns {
+                text-align: center;
+            }
+        }
+
+        .full {
+            header {
+                background: #efefef image-url("bg_header.png") repeat-x left -20px;
+                border-bottom: 1px solid #e6e6e6;
+                height: 38px;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .four.columns {
+                margin-left: -5px;
+                width: 160px;
+            }
+
+            ul#lang a {
+                color: #ccc;
+                text-decoration: none;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            nav {
+                display: none;
+            }
+            #wxWrap {
+                display: none;
+            }
+            .twelve.columns {
+                float: right;
+                position: absolute;
+                right: -5px;
+                top: 8px;
+                width: 100px;
+            }
+            .twelve.columns ul#lang {
+                margin: 0;
+                padding: 0;
+            }
+            #logo a {
+                background: image-url("logo_2.png") no-repeat 0 0;
+                display: block;
+                height: 54px;
+                margin: 5px auto;
+                text-indent: -9999px;
+                width: 142px;
+            }
+
+            // Related to Full Screen Gallery
+            #slidecaption {
+                background: #fff;
+                bottom: 2%;
+                box-shadow: 0 1px 5px rgba(0,0,0,.5);
+                font-size: 1.40em;
+                line-height: 12px;
+                -moz-box-shadow: 0 1px 5px rgba(0,0,0,.5);
+                padding: 10px;
+                position: absolute;
+                right: 2%;
+                text-align: right;
+                -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.5);
+                width: 150px;
+                span {
+                    color: #999;
+                    display: block;
+                    font-size: 0.60em;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

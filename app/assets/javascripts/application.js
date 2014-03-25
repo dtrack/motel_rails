@@ -16,4 +16,5 @@
 //= require jquery.bxslider
 //= require plug_ins
 //= require functions
+//= require main
 //= require_tree .
