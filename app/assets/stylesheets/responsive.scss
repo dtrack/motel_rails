@@ -8,7 +8,7 @@
 /*============================ Tablet (Portrait) ============================*/
 /*===========================================================================*/
 /* Note: Design for a width of 768px */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 959px) {
      #logo a {
         background: image-url("logo_2.png") no-repeat 0 0;
         display: block;
@@ -23,7 +23,7 @@
 /*============================ Mobile (Portrait + Landscape)=================*/
 /*===========================================================================*/
 /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
     .hide-on-mobile {
         display: none;
     }
@@ -33,7 +33,7 @@
 /*=========================== Mobile (Landscape) ============================*/
 /*===========================================================================*/
 /* Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
     body {
         margin-top: 0;
         .hide-on-mobile {
@@ -171,7 +171,7 @@
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-device-width: 479px) {
     body {
         margin-top: 0;
         header {
