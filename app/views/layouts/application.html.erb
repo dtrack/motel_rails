@@ -18,7 +18,10 @@
 <header>
 <div class="container">
     <div class=" four columns" id="logo">
-        <%= link_to 'River Valley Inn', root_url %>
+        <%= link_to root_url do %>
+            River Valley <br>
+            <span>INN</span>
+        <% end %>
     </div>
     <div class="twelve columns">
         <ul id="lang">
@@ -35,23 +38,11 @@
     <div class="twelve columns">
         <nav>
         <ul id="main-nav" class="sf-menu">
-            <li><a href="#">Home</a>
-            <ul>
-                <li><a href="index.html">Home slider</a></li>
-                <li><a href="index_2.html">Home fullscreen</a></li>
-            </ul>
-            </li>
+            <li><a href="#">Home</a></li>
             <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="#">Pages</a>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="fullscreen_gallery.html">Fullscreen gallery</a></li>
-                <li><a href="gallery_columns.html">Gallery grids</a></li>
-                <li><a href="rooms_2.html">Rooms 2</a></li>
-            </ul>
-            </li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="#">Gallery</a></li>
             <li><a href="contacts.html">Contact us</a></li>
-            <li><a href="#">Purchase</a></li>
         </ul>
         </nav><!-- end main nav -->
     </div><!-- end twelve -->
@@ -66,9 +57,9 @@
     <div class="container">
         <nav class="eleven columns">
         <ul id="nav-footer">
+            <li><a href="rooms.html">Home</a></li>
             <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Book now</a></li>
+            <li><a href="about.html">Amenities</a></li>
             <li><a href="fullscreen_gallery.html">Gallery</a></li>
             <li><a href="contacts.html">Contacts </a></li>
         </ul>

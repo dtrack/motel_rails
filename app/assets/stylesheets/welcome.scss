@@ -46,10 +46,14 @@ body {
             box-shadow: 0 0 5px #ccc;
             border: solid #fff 5px;
             a {
+                opacity: .3;
                 display: block;
                 padding-bottom: 4px;
                 &:last-child {
                     padding: 0;
+                }
+                &.active {
+                    opacity: 1;
                 }
                 img {
                     width: 100%;

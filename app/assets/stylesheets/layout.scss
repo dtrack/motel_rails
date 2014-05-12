@@ -19,13 +19,20 @@ header {
         -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
         text-align: center;
         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        background: image-url("palm-tree.png") no-repeat 10px 10px;
+        background-size: 50px;
+        background-color: white;
         a {
-            background: image-url("logo_1.png") no-repeat 0 0;
             display: block;
             height: 72px;
             margin: 15px auto;
-            text-indent: -9999px;
+            text-indent: 30px;
             width: 190px;
+            font-size: 30px;
+            line-height: 30px;
+            color: #506c7e;
+            font-weight: bold;
+            text-decoration: none;
         }
     }
     // languages
